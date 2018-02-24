@@ -772,7 +772,7 @@ function! s:Session.build_command(tmpl) abort
 endfunction
 
 function! s:Session.tempname(...) abort
-  let name = a:0 ? a:1 : tempname()
+  let name = a:0 ? a:1 : quickrun#expand(self.config.tempfile)
   if !has_key(self, '_temp_names')
     let self._temp_names = []
   endif
