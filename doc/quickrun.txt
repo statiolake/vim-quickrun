@@ -527,6 +527,15 @@ default.  NOTE: Everything except for "system" can be unstable.
   runner/terminal/into			Default: 0
 	Moves cursor to the terminal window if this isn't 0.
 
+- "runner/nvimterm"			*quickrun-module-runner/nvimterm*
+  {Requirement: |Neovim|}
+  Runs commands in terminal window via Neovim's |terminal| feature.
+  Option ~
+  runner/nvimterm/opener		Default: "new"
+	An Ex command to open a terminal window.
+  runner/nvimterm/into			Default: 0
+	Moves cursor to the terminal window if this isn't 0.
+
 - "runner/vimscript"			*quickrun-module-runner/vimscript*
   Runs commands as Vim commands.
   Vim command that contains |:redir| command can not run.  This gets the

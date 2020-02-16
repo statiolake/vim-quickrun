@@ -517,6 +517,15 @@ NOTE: "system" 以外は不安定な場合があります。
   runner/terminal/into			デフォルト: 0
 	0 以外を指定すると、開いたターミナルウィンドウに移動します。
 
+- "runner/nvimterm"			*quickrun-module-runner/nvimterm*
+  {|Neovim| が必要}
+  Neovim の |terminal| の機能を使ってコマンドを端末ウィンドウで実行します。
+  オプション ~
+  runner/nvimterm/opener		デフォルト: "new"
+	ターミナルウィンドウを開くための Ex コマンドです。
+  runner/nvimterm/into			デフォルト: 0
+	0 以外を指定すると、開いたターミナルウィンドウに移動します。
+
 - "runner/vimscript"			*quickrun-module-runner/vimscript*
   コマンドを Vim のコマンドとして実行します。
   |:redir| コマンドを含む Vim コマンドは実行できません。これは出力を得るために
